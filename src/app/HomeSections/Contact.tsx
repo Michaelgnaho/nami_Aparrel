@@ -232,11 +232,11 @@ const ContactSection = () => {
                       Visit Our Studio
                     </h4>
                     <address className="not-italic text-xs sm:text-sm text-gray-600 mt-1">
-                      123 Fashion Avenue
+                    Proview plaza
                       <br />
-                      Suite 400
+                      Opic Estate 
                       <br />
-                      New York, NY 10001
+                      Agbara, Ogun State, Nigeria
                     </address>
                   </div>
                 </div>
@@ -254,7 +254,6 @@ const ContactSection = () => {
                       className="text-xs sm:text-sm text-amber-600 hover:text-amber-800 hover:underline transition-colors mt-1 block"
                     >
                      odu.debby@gmail.com 
-
                     </a>
                   </div>
                 </div>

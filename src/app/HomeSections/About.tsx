@@ -6,7 +6,7 @@ import { Button } from "@/components/ui/button";
 import { ChevronDown, ChevronUp } from "lucide-react";
 
 const NamiAbout = () => {
-  const [scrolled, setScrolled] = useState(false);
+  const [, setScrolled] = useState(false);
   const [expanded, setExpanded] = useState(false);
 
   useEffect(() => {
