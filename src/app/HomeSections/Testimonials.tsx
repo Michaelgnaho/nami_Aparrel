@@ -11,7 +11,7 @@ import "swiper/css/pagination";
 import Image from "next/image";
 
 const EnhancedCustomerReviews = () => {
-  const [scrolled, setScrolled] = useState(false);
+  const [, setScrolled] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -211,7 +211,7 @@ const EnhancedCustomerReviews = () => {
                   <div className="absolute top-0 right-0 w-24 h-24 bg-gradient-to-bl from-amber-400/20 to-transparent transform rotate-0 transition-transform duration-300 group-hover:rotate-90"></div>
 
                   {/* Quote mark */}
-                  <div className="absolute top-6 right-6 text-amber-200 text-6xl font-serif opacity-30">"</div>
+                  <div className="absolute top-6 right-6 text-amber-200 text-6xl font-serif opacity-30">&quot;</div>
                   
                   {/* Customer Info with animated background */}
                   <div className="flex items-center mb-6 relative z-10">

@@ -11,6 +11,7 @@ import i3 from "@/app/assets/i3.jpg";
 import i4 from "@/app/assets/i4.jpg";
 import i5 from "@/app/assets/i5.jpg";
 import i6 from "@/app/assets/i6.jpg";
+import Link from "next/link";
 
 const ApparelCollectionsCarousel = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -243,11 +244,11 @@ const apparelCollections = [
 
         {/* View All Products button */}
         <div className="text-center mt-12">
-          <a href="/product">
+          <Link href="/product">
             <Button className="bg-amber-500 hover:bg-amber-600 text-white px-8 py-6 text-lg font-medium transition-all font-sans">
               View All Products
             </Button>
-          </a>
+          </Link>
         </div>
       </div>
     </section>

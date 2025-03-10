@@ -48,7 +48,7 @@ const SimplifiedHero = () => {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.7 }}
             >
-              NAMI'S
+              NAMI&apos;S
             </motion.span>
             <motion.span 
               className="block text-transparent bg-clip-text bg-gradient-to-r from-amber-400 via-amber-500 to-amber-600"
@@ -67,7 +67,7 @@ const SimplifiedHero = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7, delay: 0.4 }}
           >
-            Experience the future of design where innovation meets elegance. Our cutting-edge fashion redefines what's possible.
+            Experience the future of design where innovation meets elegance. Our cutting-edge fashion redefines what&apos;s possible.
           </motion.p>
 
           {/* Call to action buttons */}
