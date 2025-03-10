@@ -7,9 +7,14 @@ import { Button } from "@/components/ui/button";
 import { ArrowLeft, ShoppingBag } from "lucide-react";
 import products from "@/app/lib/product";
 
+// Update the params type to match Next.js App Router requirements
+interface ProductPageProps {
+  params: {
+    id: string;
+  };
+}
 
-
-export default function ProductPage({ params }: { params: { id: string } }) {
+export default function ProductPage({ params }: ProductPageProps) {
   const productId = parseInt(params.id);
   const product = products.find((p) => p.id === productId);
 
