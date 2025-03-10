@@ -2,8 +2,7 @@
 
 import React, { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { Button } from "@/components/ui/button";
-import { Menu, X, ShoppingBag, User, ChevronDown } from "lucide-react";
+import { Menu, X, ShoppingBag, ChevronDown } from "lucide-react";
 import Image from "next/image";
 import logo from "@/app/assets/logo.png";
 
