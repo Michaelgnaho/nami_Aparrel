@@ -1,3 +1,4 @@
+"use client";
 import { useRef, useEffect, useState, ReactNode } from "react";
 import { useSpring, animated, SpringConfig } from "@react-spring/web";
 
@@ -27,7 +28,7 @@ const AnimatedContent: React.FC<AnimatedContentProps> = ({
   delay = 0,
 }) => {
   const [inView, setInView] = useState(false);
-  const ref = useRef<HTMLDivElement | null>(null);
+  const ref = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     const element = ref.current;
@@ -46,7 +47,6 @@ const AnimatedContent: React.FC<AnimatedContentProps> = ({
     );
 
     observer.observe(element);
-
     return () => observer.disconnect();
   }, [threshold, delay]);
 
@@ -71,10 +71,12 @@ const AnimatedContent: React.FC<AnimatedContentProps> = ({
     config,
   });
 
+  const AnimatedDiv = animated("div");
+
   return (
-    <animated.div ref={ref} style={springProps}>
+    <AnimatedDiv ref={ref} style={springProps}>
       {children}
-    </animated.div>
+    </AnimatedDiv>
   );
 };
 

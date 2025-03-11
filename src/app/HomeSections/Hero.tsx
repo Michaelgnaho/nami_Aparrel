@@ -4,6 +4,7 @@ import React, { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { ChevronDown, ArrowRight } from "lucide-react";
+import Link from "next/link";
 
 const SimplifiedHero = () => {
   const [scrolled, setScrolled] = useState(false);
@@ -77,9 +78,11 @@ const SimplifiedHero = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7, delay: 0.6 }}
           >
+            <Link href="#products">
             <Button 
               className="bg-gradient-to-r from-amber-400 to-amber-600 text-white hover:text-white px-8 py-6 text-lg font-medium rounded-sm w-full sm:w-auto shadow-md"
             >
+
               <span className="flex items-center gap-2">
                 Experience Now
                 <motion.div
@@ -90,12 +93,18 @@ const SimplifiedHero = () => {
                 </motion.div>
               </span>
             </Button>
+            </Link>
+            <Link href="/product">
+            
+
             <Button
               variant="outline"
               className="border border-amber-400/50 hover:border-amber-500 text-gray-800 hover:text-amber-600 bg-transparent hover:bg-amber-50/50 px-8 py-6 text-lg font-medium rounded-sm w-full sm:w-auto"
             >
               View Collection
             </Button>
+            </Link>
+
           </motion.div>
         </motion.div>
 
