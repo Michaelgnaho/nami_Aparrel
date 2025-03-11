@@ -2,7 +2,7 @@
 "use client";
 
 import React from "react";
-import Image from "next/image";
+import Image, { StaticImageData } from "next/image";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { ArrowLeft, ShoppingBag } from "lucide-react";
@@ -12,7 +12,7 @@ interface ProductDisplayProps {
     id: number;
     name: string;
     price: string;
-    image: string;
+    image: string | StaticImageData; // Change to accept any image type (StaticImageData or string)
     category: string;
     description: string;
     features: string[];
