@@ -40,7 +40,7 @@ export default function ProductDisplay({ product }: ProductDisplayProps) {
   // Function to create WhatsApp link with pre-filled message
   const createWhatsAppLink = () => {
     const message = `Hello, I'm interested in purchasing the ${product.name} (${product.price}) from Nami Apparel.`;
-    return `https://wa.me/2348145046894?text=${encodeURIComponent(message)}`;
+    return `https://wa.me/+2347039084464?text=${encodeURIComponent(message)}`;
   };
 
   return (

@@ -9,6 +9,11 @@ export default function ProductsPage() {
 
   return (
     <section className="py-16 px-4 bg-white">
+       <Link href="/">
+          <Button className="bg-amber-500 hover:bg-amber-600 text-white">
+            Return to Home
+          </Button>
+        </Link>
       <div className="container mx-auto">
         {/* Section header */}
         <div className="text-center mb-12">
