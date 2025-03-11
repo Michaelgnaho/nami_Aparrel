@@ -9,6 +9,7 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import Image from "next/image";
+import AnimatedContent from "@/components/ui/AnimatedContent";
 
 const EnhancedCustomerReviews = () => {
   const [, setScrolled] = useState(false);
@@ -73,6 +74,9 @@ const EnhancedCustomerReviews = () => {
 
   return (
     <div className="relative w-full overflow-hidden py-24" id="testimonials">
+      <AnimatedContent>
+
+
       {/* Simplified background with subtle gradient */}
       <div className="absolute inset-0 bg-gradient-to-b from-amber-50 via-amber-50/95 to-white/90 z-10"></div>
       
@@ -263,6 +267,8 @@ const EnhancedCustomerReviews = () => {
           </Swiper>
         </motion.div>
       </div>
+      </AnimatedContent>
+
     </div>
   );
 };

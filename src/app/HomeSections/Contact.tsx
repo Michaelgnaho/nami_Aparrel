@@ -14,6 +14,7 @@ import {
   CheckCircle,
   AlertCircle,
 } from "lucide-react";
+import AnimatedContent from "@/components/ui/AnimatedContent";
 
 const ContactSection = () => {
   const [formData, setFormData] = useState({
@@ -87,6 +88,7 @@ const ContactSection = () => {
 
   return (
     <section className="py-8 sm:py-12 px-4 bg-white" id="contact">
+      <AnimatedContent>
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-8 sm:mb-10 animate-fadeIn">
           <h2 className="text-2xl sm:text-3xl md:text-3xl font-bold mb-2 sm:mb-3">
@@ -315,6 +317,9 @@ const ContactSection = () => {
           </div>
         </div>
       </div>
+
+      </AnimatedContent>
+      
     </section>
   );
 };

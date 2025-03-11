@@ -4,6 +4,7 @@ import React, { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { ChevronDown, ChevronUp } from "lucide-react";
+import AnimatedContent from '../../components/ui/AnimatedContent';
 
 const NamiAbout = () => {
   const [, setScrolled] = useState(false);
@@ -59,6 +60,7 @@ const NamiAbout = () => {
   return (
     <div className="relative w-full overflow-hidden bg-white py-24" id="about">
       {/* Simplified background with subtle gradient */}
+      <AnimatedContent>
       <div className="absolute inset-0 bg-gradient-to-b from-white via-white/95 to-white/90 z-10"></div>
       
       {/* Golden accent lines */}
@@ -201,6 +203,7 @@ const NamiAbout = () => {
           {/* Values cards */}
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 relative z-20">
             {values.map((value, index) => (
+              
               <motion.div
                 key={index}
                 className="bg-white rounded-lg p-8 shadow-xl border border-amber-100 hover:shadow-2xl hover:border-amber-200 transition-all duration-300 relative overflow-hidden group"
@@ -209,6 +212,10 @@ const NamiAbout = () => {
                 transition={{ duration: 0.6, delay: value.delay }}
               >
                 {/* Decorative golden corner */}
+                <AnimatedContent>
+
+
+                
                 <div className="absolute top-0 right-0 w-24 h-24 bg-gradient-to-bl from-amber-400/20 to-transparent transform rotate-0 transition-transform duration-300 group-hover:rotate-90"></div>
                 
                 {/* Icon with animated background */}
@@ -232,7 +239,10 @@ const NamiAbout = () => {
                 <p className="text-gray-600 text-center text-sm">{value.description}</p>
                 
                 {/* Decorative underline that animates on hover */}
+                
                 <div className="h-0.5 w-0 group-hover:w-1/2 bg-amber-400 mx-auto mt-6 transition-all duration-500"></div>
+                </AnimatedContent>
+
               </motion.div>
             ))}
           </div>
@@ -283,6 +293,7 @@ const NamiAbout = () => {
           />
         </motion.div>
       </div>
+      </AnimatedContent>
     </div>
   );
 };

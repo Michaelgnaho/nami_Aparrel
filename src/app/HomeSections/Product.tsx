@@ -12,6 +12,7 @@ import i4 from "@/app/assets/i4.jpg";
 import i5 from "@/app/assets/i5.jpg";
 import i6 from "@/app/assets/i6.jpg";
 import Link from "next/link";
+import AnimatedContent from "@/components/ui/AnimatedContent";
 
 const ApparelCollectionsCarousel = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -128,6 +129,8 @@ const apparelCollections = [
       id="apparel-collections"
       className="py-24 px-4 bg-white"
     >
+      <AnimatedContent>
+
       <div className="container mx-auto">
         {/* Section header */}
         <div className="text-center mb-12">
@@ -250,7 +253,11 @@ const apparelCollections = [
             </Button>
           </Link>
         </div>
+        
       </div>
+      </AnimatedContent>
+
+      
     </section>
   );
 };
