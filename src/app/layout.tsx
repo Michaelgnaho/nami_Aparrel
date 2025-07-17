@@ -150,8 +150,8 @@ export default function RootLayout({
               url: "https://www.namiapparels.com.ng",
               logo: "https://www.namiapparels.com.ng/logo.png",
               image: "https://www.namiapparels.com.ng/og-image.jpg",
-              telephone: "+234-XXX-XXX-XXXX", // Replace with your phone number
-              email: "info@namiapparels.com.ng", // Replace with your email
+              telephone: "+2347039084464", // Replace with your phone number
+              email: "odu.debby@gmail.com", // Replace with your email
               address: {
                 "@type": "PostalAddress",
                 streetAddress: "Your Street Address",
@@ -238,9 +238,9 @@ export default function RootLayout({
               ],
               address: {
                 "@type": "PostalAddress",
-                streetAddress: "Your Street Address",
-                addressLocality: "Lagos",
-                addressRegion: "Lagos State",
+                streetAddress: "Proview plaza Opic Estate Agbara,  Nigeria",
+                addressLocality: "Ogun State,",
+                addressRegion: "Ogun State,",
                 postalCode: "100001",
                 addressCountry: "NG",
               },
