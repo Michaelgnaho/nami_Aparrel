@@ -11,6 +11,10 @@ const geistMono = Geist_Mono({
   variable: "--font-geist-mono",
   subsets: ["latin"],
 });
+<meta
+  name="google-site-verification"
+  content="yXFu48X7sWNzrBPSfpu34zSEQwAQF-O-5b6jgGGYy0s"
+/>;
 
 export const metadata: Metadata = {
   title: "Nami Apparel",
